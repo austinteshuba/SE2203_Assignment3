@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iClinic.ViewEditWorkerController">
+   <children>
+      <Label layoutX="184.0" layoutY="21.0" text="View/Edit Worker Accounts">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="userIDComboBox" layoutX="144.0" layoutY="122.0" onAction="#updateFields" prefHeight="27.0" prefWidth="422.0" />
+      <Label layoutX="74.0" layoutY="127.0" text="UserID" />
+      <TextField fx:id="passwordTextField" layoutX="144.0" layoutY="189.0" prefHeight="27.0" prefWidth="422.0" />
+      <Label layoutX="55.0" layoutY="194.0" text="Password" />
+      <Label layoutX="34.0" layoutY="256.0" text="Worker Type" />
+      <ComboBox fx:id="workerTypeComboBox" layoutX="144.0" layoutY="251.0" prefHeight="27.0" prefWidth="422.0" />
+      <Button fx:id="cancelButton" layoutX="385.0" layoutY="348.0" mnemonicParsing="false" onAction="#cancel" text="Cancel" />
+      <Button layoutX="455.0" layoutY="348.0" mnemonicParsing="false" onAction="#edit" text="Apply Changes" />
+      <Button layoutX="42.0" layoutY="348.0" mnemonicParsing="false" onAction="#delete" text="Delete Record" textFill="RED" />
+   </children>
+</AnchorPane>
